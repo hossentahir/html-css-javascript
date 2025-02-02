@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gym Management System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Gym Management System</h1>
+        
+        <!-- Dark Mode Toggle -->
+        <button id="toggleDarkMode">Toggle Dark Mode</button>
+
+        <!-- Member Registration Form -->
+        <h2>Register a Member</h2>
+        <form id="memberForm">
+            <input type="text" id="name" placeholder="Member Name" required>
+            <input type="number" id="age" placeholder="Age" required>
+            <input type="text" id="plan" placeholder="Membership Plan (e.g. Gold, Silver)" required>
+            <button type="submit">Add Member</button>
+        </form>
+
+        <!-- Member List -->
+        <h2>Member List</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Age</th>
+                    <th>Plan</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody id="memberList">
+                <!-- Member rows will be added dynamically -->
+            </tbody>
+        </table>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
